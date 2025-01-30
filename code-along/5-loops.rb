@@ -3,9 +3,44 @@
 # ruby 5-loops.rb
 
 # Infinite Tacos -> Finite Tacos
-# loop do
+#loop do
 #   puts "tacos!"
-# end
+#end
 
 # Loop through tacos
-# tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+tacos = ["carnitas", "carne asada", "pollo", "pescado"]
+
+index = 0
+
+loop do
+    taco = tacos[index]
+
+    puts "#{taco} tacos!"
+
+    index = index + 1
+
+    if index == tacos.size
+        break
+    end
+end
+
+puts index
+
+
+# Other format
+
+for taco in tacos
+    puts "#{taco} tacos!"
+end
+
+# hash iteration
+
+profile ={"name" => "Pedro", "status" => "Kellogg Student", "course" => "MMM"}
+
+for attribute in profile
+    puts attribute
+end
+
+tacos.each do |taco|
+    puts taco
+end
