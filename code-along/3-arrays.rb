@@ -4,9 +4,40 @@
 
 # Arrays are lists of things
 
+favorite_foods = ["tacos", "pizza", "lasagna"]
+puts favorite_foods
+
+we_have_to_go = [ 3, 2, 1]
+puts we_have_to_go
+
+
+mixed_array = [ "tacos", 12, false]
+puts mixed_array
+
+shopping_list = [["milk","butter","eggs"],["meat","bread"]]
+p shopping_list
+
+
 # Accessing the array
+
+puts favorite_foods[2]
+
+puts shopping_list [1][0]
+puts shopping_list [-1][-1]
+
 
 # Add to the array
 
+puts favorite_foods << "mac&cheese"
+favorite_foods.push("chocolate cake")
+puts favorite_foods
+puts ""
+puts ""
+
+favorite_foods = favorite_foods + ["french fries", "ramen"]
+p favorite_foods
+
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+puts "favorite foods:  #{favorite_foods.count}"
