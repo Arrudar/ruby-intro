@@ -39,8 +39,8 @@ else
 end
 
 
-minimum_value = 500
-bank_value = 460
+minimum_value == 500
+bank_value == 460
 
 if minimum_value == bank_value
     puts "Chashin!"
@@ -52,7 +52,6 @@ end
 
 # Combining Expressions
 
-#AND
-&&
+#AND -> &&
 
 #OR ||
