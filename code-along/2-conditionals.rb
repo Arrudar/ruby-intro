@@ -27,8 +27,6 @@ end
 
 # If/Else Conditional Logic
 
-# Elsif Conditional Logic
-
 user_entered_password = "password"
 real_password = "tacos-nachos-gato"
 
@@ -38,9 +36,27 @@ else
     puts "what!? Are you trying to break-in?"
 end
 
+# Elsif Conditional Logic
 
-minimum_value == 500
-bank_value == 460
+your_team_score = rand(1..10)
+other_team_score = rand(1..10)
+puts ""
+puts ""
+puts "Your score was #{your_team_score} and other team score was #{other_team_score}"
+if your_team_score > other_team_score
+    puts "Yay, your team won!"
+elsif your_team_score == other_team_score
+  puts "Ok, you tied ¯\_(ツ)_/¯"
+else
+  puts "Your team lost :("
+end
+puts ""
+puts "" 
+
+#Another example
+
+minimum_value = 500
+bank_value = 460
 
 if minimum_value == bank_value
     puts "Chashin!"
@@ -52,6 +68,25 @@ end
 
 # Combining Expressions
 
+
 #AND -> &&
 
+temp = 68
+precipitation = 0
+if temp >= 65 && temp <= 75 && precipitation == 0
+  puts "It's perfect outside!"
+end
+
+puts ""
+puts ""
+puts ""
+
+
 #OR ||
+
+temp = rand(50..70)
+precipitation = rand(0..3)
+puts "temp = #{temp} and precipitation = #{precipitation}"
+if temp <= 55 || precipitation != 0
+  puts "Beaware on going outside!"
+end 

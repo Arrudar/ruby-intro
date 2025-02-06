@@ -29,7 +29,7 @@ puts die2
 
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
-puts total
+puts "total is #{total}"
 
 puts ""
 

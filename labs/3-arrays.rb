@@ -15,3 +15,31 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+my_shopping_list = ["milk", "eggs", "bacon","beer"]
+friend_shopping_list = ["beer", "cookies", "apples"]
+
+combined_shopping_list = my_shopping_list + friend_shopping_list
+
+puts ""
+p combined_shopping_list
+puts ""
+
+combined_shopping_list = combined_shopping_list.sort.uniq
+
+p combined_shopping_list
+
+puts ""
+puts combined_shopping_list
+puts ""
+
+list_size = combined_shopping_list.count
+list_item_to_buy = 0
+
+loop do 
+    puts "buy #{combined_shopping_list[list_item_to_buy]}"
+    list_item_to_buy = list_item_to_buy + 1
+    if list_item_to_buy == list_size
+        break
+    end
+end

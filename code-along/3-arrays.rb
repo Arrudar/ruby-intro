@@ -27,17 +27,23 @@ puts shopping_list [-1][-1]
 
 
 # Add to the array
-
-puts favorite_foods << "mac&cheese"
-favorite_foods.push("chocolate cake")
+puts ""
+puts "Adding to the array"
+puts ""
+puts favorite_foods << "macarons"
+favorite_foods.push("chocolate cake", "popcorn")
 puts favorite_foods
 puts ""
 puts ""
 
 favorite_foods = favorite_foods + ["french fries", "ramen"]
 p favorite_foods
+puts ""
+
 
 # There are lots of fun things you can do with arrays:
 # https://ruby-doc.org/core-2.7.0/Array.html
 
 puts "favorite foods:  #{favorite_foods.count}"
+puts "favorite foods:  #{favorite_foods.length}"
+puts "favorite foods:  #{favorite_foods.size}"
