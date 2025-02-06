@@ -41,3 +41,5 @@ ebay = [
     }
 
 ]
+
+puts ebay["description"]

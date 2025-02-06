@@ -5,7 +5,7 @@ require "json"
 url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 uri = URI(url)
 response = Net::HTTP.get(uri)
-bitcoin_data = JSON.parse(response)
+coin_data = JSON.parse(response)
 # ----------------------
 
 # To run this code, be sure your current working directory
@@ -20,7 +20,12 @@ bitcoin_data = JSON.parse(response)
 # Sample output:
 # 1 Bitcoin is valued at $41405.1046 USD.
 # Your Bitcoin is worth $62107.6569.
-bitcoin_price = bitcoin_data["bpi"]["USD"]["rate_float"].to_f
+
+puts "What currency you would like to verify? Pls type: USD, GBP or EUR"
+currency = gets.chomp.to_s
+    
+
+coin_price = coin_data["bpi"][currency]["rate_float"].to_f
 
 # 1. Get input from a user using gets.chomp.
 puts "How much bitcoin do you have?"
@@ -35,5 +40,5 @@ puts bitcoin
 
 # Display results
 puts "1 Bitcoin is valued at $
-#{bitcoin_price} USD."
-puts "Your Bitcoin is worth $#{bitcoin * bitcoin_price} USD."
+#{coin_price} #{currency}."
+puts "Your Bitcoin is worth $#{bitcoin * coin_price} #{currency}."
