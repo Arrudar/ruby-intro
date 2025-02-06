@@ -22,7 +22,9 @@ my_profile = {
 }
 
 p my_profile
+puts ""
 puts my_profile
+puts ""
 puts my_profile ["location"]["city"]
 puts my_profile ["location"]["state"]
 
@@ -42,4 +44,4 @@ ebay = [
 
 ]
 
-puts ebay["description"]
+#puts ebay["description"]
